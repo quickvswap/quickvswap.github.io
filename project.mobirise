@@ -1,0 +1,151 @@
+{
+  "settings": {
+    "name": "Quickswap 2",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/quickswap_1.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://quickvswap.github.io/sitemap.xml\n\n\n\n\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://quickvswap.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "pnpfdudwsz",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Quickswap™ | Home Official Site",
+        "meta_descr": "Quickswap - Leading DEX on Polygon. QuickSwap is a next-gen #DEX for #DeFi. Trade at lightning-fast speeds with near-zero gas fees.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://quickswap.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/quickswap.png\" alt=\"Quickswap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tYSqJ5DvI4",
+          "_anchor": "image04-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Quickswap™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">&nbsp;<b>QuickSwap: Unleashing the Power of DeFi on Polygon\n</b><br><br><b>Introduction</b><br><br><a href=\"https://quickvswap.github.io/\" class=\"text-primary\"><b>QuickSwap</b></a> has emerged as a game-changing decentralized exchange (DEX) built on the Polygon network. By combining the scalability and low fees of Polygon with the efficiency of automated market makers (AMMs), QuickSwap has revolutionized the decentralized finance (DeFi) landscape, offering users a fast, cost-effective, and user-friendly trading experience. In this article, we will explore the key features of QuickSwap, its impact on the Polygon ecosystem, and how it is driving DeFi adoption to new heights.\n<br><br><b>Understanding QuickSwap</b><br><a href=\"https://quickswap.exchange\" class=\"text-primary\"><b>QuickSwap</b></a> is a decentralized exchange protocol built on the Polygon network, formerly known as Matic. It utilizes the popular AMM model to enable users to trade a wide range of tokens without the need for intermediaries or centralized authorities. QuickSwap leverages the efficiency of Polygon's Layer 2 technology, ensuring fast and low-cost transactions.\n<br>QuickSwap's architecture is based on the Ethereum Virtual Machine (EVM), making it compatible with Ethereum-based tokens. This compatibility allows users to seamlessly transfer their assets between the Ethereum and Polygon networks, benefiting from the scalability and low fees of Polygon while staying connected to the broader Ethereum ecosystem.\n<br>The protocol's native token, QUICK, plays a central role in the QuickSwap ecosystem. It serves as a governance token, allowing holders to participate in the decision-making process and shape the future development of the platform. Additionally, QUICK holders can stake their tokens in liquidity pools to earn attractive yields and participate in the platform's governance rewards.\n<br><br><b>Impact on the Polygon Ecosystem</b><br>QuickSwap has had a significant impact on the growth and development of the Polygon ecosystem. By providing a high-performance and cost-effective DEX, QuickSwap has attracted a large number of users and projects to the Polygon network. The protocol's low fees and fast transactions have become a major draw for users seeking an enhanced DeFi experience compared to other congested networks.\n<br>QuickSwap's liquidity pools have played a crucial role in boosting the liquidity of various tokens on the Polygon network. By incentivizing users to provide liquidity, QuickSwap ensures the availability of ample liquidity, thus promoting a healthy trading environment. This increased liquidity attracts more users and projects to participate in the Polygon ecosystem, further fueling its growth.\n<br>Furthermore, QuickSwap has facilitated the launch of numerous innovative projects on Polygon through its Initial DEX Offering (IDO) platform. This platform allows new projects to raise funds and distribute tokens directly to liquidity providers, fostering a decentralized and vibrant fundraising ecosystem on Polygon.\n<br><br><b>Driving DeFi Adoption</b><br>QuickSwap's commitment to innovation and user experience has been instrumental in driving DeFi adoption on the Polygon network. The protocol offers a seamless and intuitive interface that enables users to trade tokens with ease. The user-friendly design and low transaction fees make QuickSwap an attractive option for both experienced traders and newcomers to the DeFi space.\n<br>QuickSwap's integration with various popular wallets, such as MetaMask, enhances accessibility and allows users to connect their wallets seamlessly. This integration simplifies the onboarding process for users and encourages broader adoption of QuickSwap as a preferred DEX on the Polygon network.\n<br>The protocol also supports yield farming, enabling users to stake their assets in liquidity pools and earn additional tokens as rewards. QuickSwap's yield farming mechanism incentivizes users to participate actively in the ecosystem and provides an avenue for users to earn attractive returns on their investments.\n<br>QuickSwap actively collaborates with other projects and protocols in the Polygon ecosystem, fostering partnerships and driving innovation. The protocol's interoperability and integration capabilities make it a valuable player in the DeFi landscape, amplifying the overall growth and adoption of decentralized finance on Polygon.\n<br><br><b>Conclusion&nbsp;</b><br>QuickSwap has emerged as a leading decentralized exchange on the Polygon network, revolutionizing DeFi trading with its fast, cost-effective, and user-friendly platform. By leveraging the scalability of Polygon and the efficiency of AMMs, QuickSwap has attracted a growing number of users and projects to the Polygon ecosystem. With its low fees, seamless user experience, and innovative features like yield farming and IDOs, QuickSwap is driving DeFi adoption on Polygon, empowering users to participate in the decentralized finance revolution in a scalable and cost-effective manner.&nbsp;<br></p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tYSqJUBjqe",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
